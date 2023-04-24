@@ -1,0 +1,45 @@
+<main>
+
+  <div id="banner">
+    <div class="content">
+      
+    <h1>Ache sua <span>Vaga</span> e Desenvolva
+      Sua <span>Paixão</span></h1>
+      <p>Ache sua vaga para trabalhar de sua casa, remotamente, freelance, full-time.</p>
+      <div class="form">
+        <form action="/" method="GET">
+        <input type="text" name="job" id="job" placeholder="Digite a vaga que esta buscando">
+        <button>Buscar Vagas</button>
+        </form>
+      </div>    
+    </div>
+  </div>
+<div class="content-vagas">
+   {{#if search}}
+   <h3>Buscando vagas que contem: {{search}}</h3>
+      {{else}}
+      <h3>Veja nossas vagas em destaque</h3>
+      {{/if}}
+  <div class="vagas">
+  
+    <ul class="box">
+       
+      {{#each jobs}}
+      <li class="libox {{#if dataValues.new_job}} newjob{{/if}}">
+      <div class="logo"><img src="/img/logo-emp1.jpg" alt=""></div>
+      <div class="cont-vaga">
+      <p>{{dataValues.company}}</p>
+      <h2>{{dataValues.title}}</h2>
+      <p>{{dataValues.description}}</p>
+      <p>R$ {{dataValues.salary}}</p>
+      <a class="button-vaga" href="/jobs/view/{{dataValues.id}}">Ver vaga</a>
+      </div>
+      </li>
+      {{/each}}
+    </ul>
+    
+        
+  </div>
+
+  </div>
+</main>

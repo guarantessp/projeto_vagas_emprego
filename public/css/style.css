@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 11.4rem;
+  background-color: #fff;
+  padding: 3rem;
+  text-transform: uppercase;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  color: #15bc8a;
+  font-weight: bold;
+}
+.logo span{
+  font-size: 4rem;
+  color: #141503;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.menu .nav {
+  font-size: 1.5rem;
+  color: #141503;
+  text-decoration: none;
+  background-color: #f0f4f3;
+  padding: 1.7rem;
+  font-weight: 400;
+}
+.menu .nav:hover{
+  background-color: #c6cbca;
+  color: #fff;
+}
+.menu a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: #15bc8a;
+  font-weight: 400;
+  padding: 1.7rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.menu a:hover {
+  background-color: #128a66;
+}
+
+/* Banner */
+
+#banner {
+  background-image: url('../img/banner.jpg');
+  background-position: 0 -100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #edf5f3;
+  height: 60rem;
+}
+#banner .content {
+  width: 65%;
+  padding: 17rem 10rem 2rem;
+}
+
+.content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 60px;
+  color: rgb(22, 21, 21);
+}
+
+.content h1 span {
+  color: #15bc8a;
+}
+.content p{
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+.content.form{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.form{
+  padding: 2rem 0;
+}
+.form input {
+  padding: 1.5rem;
+  width: 70%;
+  border: 0;
+  font-size: 2rem;
+}
+.form button {
+  background-color: #d02616;
+  padding: 1.5rem;
+  border: 0;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.form button:hover {
+  background-color: #ac1f12;
+}
+/* vagas */
+.vagas {
+  padding: 5rem;
+  display: flex;
+  }
+
+ul.box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+  .content-vagas h3 {
+    display: flex;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+.libox{
+  background-color: #edf5f3;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 1rem;
+  position: relative;
+}
+
+.libox.newjob::after{
+  content: 'NEW';
+  width: 5rem;
+  height: 2rem;
+  background-color: #f7ad1b;
+  position: absolute;
+  right: .4rem;
+  top: .4rem;
+  z-index: 2;
+  padding: .4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.box {
+  height: auto;
+   padding: 2rem;
+  display: flex;
+  border-radius: .3rem;
+  gap: 1rem;
+   }
+  .box h2 {
+    font-size: 1.8rem;
+    padding: .3rem;
+  }
+  .box p {
+    font-size: 1.5rem;
+    padding: .3rem;
+  }
+  .button-vaga {
+    width: 10rem;
+    padding: 1rem;
+    background-color: #128a66;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: .5rem;
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .button-vaga:hover{
+    background-color: #0c6349;
+  }
+.logo img{
+  width: 9rem;
+  height: 9rem;
+  margin-right: 2rem;
+}
+#job-view-container {
+  width: 90%;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#img-container img{
+  margin-top: 12rem;
+  width: 17rem;
+  height: 17rem;
+}
+
+.detalhes-vagas{
+    text-align: center;
+}
+
+.detalhes-vagas p{
+  font-size: 2rem;
+}
+.detalhes-vagas span{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #755d52;
+}
+a.bot-voltar{
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+}
+/* Página Abrir vagas */
+
+#conteudo-abrir {
+  padding: 4rem;
+  width: 100%;
+  background-color: #edf5f3;
+  height: max-content;
+}
+#conteudo-abrir h2 {
+  font-size: 3rem;
+  margin-top: 15rem;
+  text-align: center;
+}
+#conteudo-abrir h3 {
+  font-size: 2rem;
+  color: #ac4012;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+.form-vagas{
+  background-color: #fff;
+  padding: 4rem;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-vagas label {
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-top: 4rem;
+}
+.form-vagas input {
+  padding: 1.4rem;
+  margin-top: .8rem;
+  margin-bottom: .5rem;
+  background-color: #fcfffe;
+  border: solid 1px #15bc8a;
+  font-size: 1.6rem;
+}
+.form-vagas button {
+font-size: 2rem;
+text-transform: uppercase;
+background-color: #15bc8a;
+font-weight: 400;
+padding: 2rem;
+color: #fff;
+border: none;
+cursor: pointer;
+margin: 4rem;
+}
+.form-vagas button:hover {
+  background-color: #14a97d;
+}
+
+input[type=text] {
+  font-family: 'Poppins', sans-serif;
+}
+.form-vagas textarea {
+  padding: 1.4rem;
+  margin-top: .8rem;
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fcfffe;
+  border: solid 1px #15bc8a;
+}
+.form-vagas span {
+  font-size: 1.2rem;
+}
+
+
+
+
+
+@media (max-width: 1100px){
+  #banner .content {
+    width: 75%;
+    padding: 17rem 10rem 2rem;
+  }
+  #banner {
+    background-position: 90px 100px;
+  }
+}
+
+
+@media (max-width:780px) {
+  #banner .content {
+    width: 83%;
+    padding: 17rem 4rem 1rem;
+  }
+ 
+  .content h1 {
+    font-size: 4rem;
+    line-height: 40px;
+  }
+
+  #banner {
+    background-position: 21px 101px;
+    height: 50rem;
+  }
+  .vagas {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 660px) {
+  .content p{
+    font-size: 1.4rem;
+    margin: 2rem 0;
+  }
+  #banner {
+    height: 30rem;
+  }
+
+}
+
+@media (max-width:430px) {
+
+  #banner {
+  min-height: 510px;
+  background-position: 1px 221px;
+  background-size: contain;
+  }
+  #banner .content {
+    width: 93%;
+    padding: 12rem 4rem 1rem;
+  }
+  .form input {
+    width: 310px;
+    margin-bottom: 1rem;
+  }
+  #banner .content {
+    width: 100%;
+  }
+  #banner .content p {
+    width: 50%;
+  }
+}
+@media (max-width:380px) {
+  #banner {
+    min-height: 580px;
+    background-position: -100px 221px;
+    background-size: 150%;
+    }
+    .vagas {
+      padding: 2rem;
+      gap: 3rem;
+    }
+    #banner .content {
+      width: 93%;
+      padding: 12rem 4rem 1rem;
+    }
+    .form input {
+      margin-bottom: 2rem;
+    }
+    #banner .content h1 {
+      width: 100%;
+    }
+    #banner .content p {
+      width: 80%;
+    }
+  
+}
+@media (max-width:380px) {
+  #banner {
+    min-height: 610px;
+    background-position: -190px 221px;
+    background-size: 190%;
+    }
+    .form input {
+      width: 110%;
+    }
+}
